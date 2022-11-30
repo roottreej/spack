@@ -180,7 +180,7 @@ class PythonPackage(PythonExtension):
     """Specialized class for packages that are built using pip."""
 
     #: Package name, version, and extension on PyPI
-    pypi = None  # type: Optional[str]
+    pypi: Optional[str] = None
 
     maintainers = ["adamjstewart", "pradyunsg"]
 
